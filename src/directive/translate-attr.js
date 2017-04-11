@@ -55,7 +55,7 @@ angular.module('pascalprecht.translate')
     </file>
    </example>
  */
-.directive('translateAttr', translateAttrDirective);
+.directive('ngTranslateAttr', translateAttrDirective);
 function translateAttrDirective($translate, $rootScope) {
 
   'use strict';

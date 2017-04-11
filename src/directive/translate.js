@@ -2,9 +2,9 @@ angular.module('pascalprecht.translate')
 /**
  * @ngdoc directive
  * @name pascalprecht.translate.directive:translate
- * @requires $interpolate, 
- * @requires $compile, 
- * @requires $parse, 
+ * @requires $interpolate,
+ * @requires $compile,
+ * @requires $parse,
  * @requires $rootScope
  * @restrict AE
  *
@@ -93,7 +93,7 @@ angular.module('pascalprecht.translate')
     </file>
    </example>
  */
-.directive('translate', translateDirective);
+.directive('ngTranslate', translateDirective);
 function translateDirective($translate, $interpolate, $compile, $parse, $rootScope) {
 
   'use strict';

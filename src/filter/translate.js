@@ -50,7 +50,7 @@ angular.module('pascalprecht.translate')
     </file>
    </example>
  */
-.filter('translate', translateFilterFactory);
+.filter('ngTranslate', translateFilterFactory);
 
 function translateFilterFactory($parse, $translate) {
 

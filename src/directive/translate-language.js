@@ -43,7 +43,7 @@ angular.module('pascalprecht.translate')
     </file>
    </example>
  */
-.directive('translateLanguage', translateLanguageDirective);
+.directive('ngTranslateLanguage', translateLanguageDirective);
 
 function translateLanguageDirective() {
 

@@ -19,7 +19,7 @@ angular.module('pascalprecht.translate')
  *                                  or hiding the cloak. Basically it relies on the translation
  *                                  resolve.
  */
-.directive('translateCloak', translateCloakDirective);
+.directive('ngTranslateCloak', translateCloakDirective);
 
 function translateCloakDirective($translate, $rootScope) {
 

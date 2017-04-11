@@ -396,66 +396,7 @@ module.exports = function (grunt) {
       }
     },
 
-    karma: {
 
-      // Runs standard tests in default browser
-      'unit': {
-        options: {
-          configFile: 'karma.unit.conf.js',
-          singleRun: true
-        }
-      },
-      'midway': {
-        options: {
-          configFile: 'karma.midway.conf.js',
-          singleRun: true
-        }
-      },
-
-      // Runs standard tests in headless PhantomJS
-      'headless-unit': {
-        options: {
-          configFile: 'karma.unit.conf.js',
-          singleRun: true,
-          browsers: ['PhantomJS']
-        }
-      },
-      'headless-midway': {
-        options: {
-          configFile: 'karma.midway.conf.js',
-          singleRun: true,
-          browsers: ['PhantomJS']
-        }
-      },
-
-      // Runs standard tests in Firefox
-      'browser-firefox-unit': {
-        options: {
-          configFile: 'karma.unit.conf.js',
-          singleRun: true,
-          browsers: ['Firefox']
-        }
-      },
-      'browser-firefox-midway': {
-        options: {
-          configFile: 'karma.midway.conf.js',
-          singleRun: true,
-          browsers: ['Firefox']
-        }
-      },
-
-      // Opens the default browser on the default port for advanced debugging.
-      'debug-unit': {
-        configFile: 'karma.unit.conf.js',
-        singleRun: false,
-        browsers: []
-      },
-      'debug-midway': {
-        configFile: 'karma.midway.conf.js',
-        singleRun: false,
-        browsers: []
-      }
-    },
 
     conventionalChangelog : {
       options : {
@@ -686,10 +627,6 @@ module.exports = function (grunt) {
 
   grunt.registerTask('build', [
     'jshint:all',
-    'karma:headless-unit',
-    'karma:headless-midway',
-    'karma:unit',
-    'karma:midway',
     'compile'
   ]);
 

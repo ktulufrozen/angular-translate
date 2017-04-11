@@ -48,7 +48,7 @@ angular.module('pascalprecht.translate')
     </file>
    </example>
  */
-.directive('translateNamespace', translateNamespaceDirective);
+.directive('ngTranslateNamespace', translateNamespaceDirective);
 
 function translateNamespaceDirective() {
 
